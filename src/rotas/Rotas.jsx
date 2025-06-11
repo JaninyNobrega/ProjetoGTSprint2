@@ -4,6 +4,7 @@ import Layout from '../components/Layout.jsx'
 import Home from '../pages/Home.jsx'
 import NotFound from '../pages/NotFound.jsx'
 import PageCarrinho from '../pages/PageCarrinho.jsx'
+import Cadastro from '../pages/Cadastro.jsx'
 
 
 const Rotas = () => {
@@ -13,8 +14,9 @@ const Rotas = () => {
     <Route path='/' element={<Layout/>}>
         <Route index element={<Home/>}/>
         <Route path='carrinho' element={<PageCarrinho/>}/>
+        <Route path='cadastro' element={<Cadastro/>}/>
         <Route path='*' element={<NotFound/>}/>
-    </Route>
+    </Route>n
    </Routes>
    </BrowserRouter>
   )
